@@ -1,4 +1,4 @@
-package strategy_pattern;
+package strategy;
 
 public class Client {
 
