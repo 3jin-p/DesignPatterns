@@ -141,5 +141,4 @@ publi class OffState implements LightState{
 ````
 
 **State 패턴 UML**  
-
-<img src="state.png"  width="200" height="150"
+![state](state.png)
