@@ -137,8 +137,10 @@ publi class OffState implements LightState{
         System.out.println("변화 없음");
     }
 }
-
 ````
+
+>State 패턴은 Strategy 패턴과 구조적으로 매우 유사하지만,   
+Strategy 패턴과는 다르게 Client 가 상태 객체에 대한 정보를 전혀 알지 못한다는 차이점이 있다.
 
 **State 패턴 UML**  
 ![state](state.png)
