@@ -141,6 +141,6 @@ public class Client {
 기능이 확장될 때에는 해당하는 책임을 지닌 클래스를 추가만 하면 되는 구조가 되었다. 
 
 
-**Command Pattern UML**. 
+**Command Pattern UML**  
 ![Command Pattern](command.gif);
 
