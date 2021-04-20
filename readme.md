@@ -7,3 +7,4 @@ Design Patterns with Java
 - [Singleton Pattern](src/singleton)
 - [State Pattern](src/state)
 - [Command Pattern](src/command)
+- [Observer Pattern](src/observer)

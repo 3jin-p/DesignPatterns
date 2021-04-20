@@ -9,7 +9,7 @@ State Pattern 이란, 객체의 상태에 따라 행위가 달라질때 사용�
 - 형광등의 켜짐 버튼을 눌렀을때, 형광등이 꺼져있으면 켜고 켜져있으면 아무 동작도 하지 않는다.
 - 형광등의 꺼짐 버튼을 눌렀을때, 형광등이 켜져있으면 끄고 꺼져있으면 아무 동작도 하지 않는다.
 
-```` java
+```java
 public class Light {
 
     private static final boolean ON = true;
@@ -17,7 +17,7 @@ public class Light {
     
     private boolean isLightOn;
     
-    public Light() { this.isLightOn = OFF }
+    public Light() { this.isLightOn = OFF; }
     
     public void pushTurnOnButton() {
         if (!this.isLightOn) {
@@ -37,7 +37,7 @@ public class Light {
         }
     }
 }
-````
+```
   
 단순히 요구사항대로만 구현한다면 위 처럼 구현이 될 것이다. 
 하지만 여기서 상태가 추가된다거나, 상태에 따른 행위가 변경된다면?  
@@ -45,7 +45,7 @@ public class Light {
   
 그래서 객체에서 상태에 대한 관심사를 분리해내 독립적인 Interface 로 만드는것이 State 패턴이다.  
 
-```` java
+```java
 // 상태 정보 인터페이스
 public interface LightState {
     void turnOnButtonPushed(Light light);
@@ -102,7 +102,7 @@ public class OffState implements LightState{
         System.out.println("변화 없음");
     }
 }
-````
+```
 1. 위와 같은 LightState 인터페이스에 요구사항의 상태에따라 달라지는 행위에 대한 정보를 작성하고
 2. LightState를 구현한 각 상태에서 해당 행위를 구현한다.
 3. 상태 정보는 새로운 객체를 생성하며 메모리를 낭비 할 필요가 없으므로 싱글톤으로 구현해준다.  
@@ -111,9 +111,9 @@ public class OffState implements LightState{
 
 LightState 인터페이스를 활용한 Light 객체는 아래와 같다. 
 
-```` java
+```java
 
-publi class OffState implements LightState{
+public class OffState implements LightState{
 
     private static OffState offState = null;
 
