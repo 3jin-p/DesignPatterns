@@ -8,3 +8,4 @@ Design Patterns with Java
 - [State Pattern](src/state)
 - [Command Pattern](src/command)
 - [Observer Pattern](src/observer)
+- [Decorator Pattern](src/decorator)
