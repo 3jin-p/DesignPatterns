@@ -84,9 +84,12 @@ public class Battery {
 위와 같이 새로 추가된 클래스들와 Battery 클래스는 강한 연관 관계를 맺으며  
 consume 메서드는 또 변경되게 된다. 
 
-### UML  
+---
+### Observer Pattern
+#### UML
 ![observer](observer.png);
 
+#### 구현
 Observer Pattern 은 상태 변경의 구독 대상이 될 슈퍼 클래스 Subject 와 그 실제로 사용되는 그 확장 클래스.   
 그리고 상태 변경을 감지할 Observer 인터페이스와 그 구현체들로 이루어져있다. 
 
