@@ -84,10 +84,10 @@ public class Battery {
 위와 같이 새로 추가된 클래스들와 Battery 클래스는 강한 연관 관계를 맺으며  
 consume 메서드는 또 변경되게 된다. 
 
-*UML*  
+### UML  
 ![observer](observer.png);
 
-Observer Pattern 은 상태 변경의 구독 대상이 될 슈퍼 클래스 Subject 와 그 실제로 사용되는 그 확장 클래스  
+Observer Pattern 은 상태 변경의 구독 대상이 될 슈퍼 클래스 Subject 와 그 실제로 사용되는 그 확장 클래스.   
 그리고 상태 변경을 감지할 Observer 인터페이스와 그 구현체들로 이루어져있다. 
 
 이제 Battery 객체에 Observer Pattern 을 적용하여 
@@ -153,5 +153,5 @@ public class Battery extends Subject {
 }
 ```
 
-옵저버 패턴을 적용해보았다. Battery 클래스는 다른 클래스들과의 의존관계를 완전히 끊어내었고
-기능을 확장하거나 축소 때도 attach(), dettach() 메서드로 옵저버를 추가하거나 제거 주기만 하면된다.
+옵저버 패턴을 적용해보았다. Battery 클래스는 다른 클래스들과의 의존관계를 완전히 끊어내었고. 
+기능을 확장하거나 축소할 때도 attach(), dettach() 메서드로 옵저버를 추가하거나 제거 주기만 하면된다.
